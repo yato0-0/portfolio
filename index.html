@@ -4,75 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>zyzet</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Josefin+Sans:wght@100;200;300;400;600&family=Lato:ital@0;1&family=Poppins:wght@400;500;600&family=Prosto+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Zyzet</title>
 </head>
 <body>
-    <section id="home">
-        <nav>
-            <div class="personal__logo">Portfolio</div>
-            <ul class="nav__link--list">
-                <li>
-                    <a href="" class="nav__link--anchor link__hover-effect link__hover-effect--black">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav__link--anchor link__hover-effect link__hover-effect--black">
-                        About
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="nav__link--anchor link__hover-effect link__hover-effect--black">
-                        skill
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
-        <div class=" flex flex-1">
-            <div class="about-me__info row">
-                <div class="about-me-info__container">
-                    <figure class="about-me--pic-mask">
-                        <img src="./images/logo1.png" alt="" class="about-me--pic">
-                    </figure >
-                    <h1 class="abt__me-info">
-                         I am <span class="text--color">Pranav</span>
-                    </h1>
-                    <p class="abt-me__info--para">
-                       I am <strong class="text--color">Programmer</strong> amet consectetur adipisicing elit. Nam deserunt officia alias iste accusantium minus, repudiandae est deleniti porro quisquam numquam, earum adipisci, labore libero eos vitae accusamus suscipit aperiam?
-                    </p>
-                    <div class="abt-me__links">
-                        <a href="" class="about-me__link">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="" class="about-me__link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="" class="about-me__link">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <!-------start Header---------->
+    <header class="sticky">
+        <a href= "" class = "logo">Portfolio</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li ><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+        </ul>
+    </header>
+
+     <!-------start Home---------->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h4>Hello My Name is</h4>
+            <h1><span>Pranav</span></h1>
+            <h2>I am a <span class="typing"></span></h2>
+        </div>
+
+        <div class="btn1">
+            <a href="#about" class="btn">To know More</a>
+        </div>
+       
+    </section>
+
+    <!-------start About---------->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./about1.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About Me</h2>
+            <h5>Developer <span>& Programmer</span></h5>
+            <p>I am a 17 year old boy who is into cyber Security , learning Hacking
+                and stuffs, I am Programmer and trying to learn new stuffs daily.Interested in
+                learning anything about Technoligical Stuff and keep up with the daily technoligical world</p>
         </div>
     </section>
 
-    <section id="about">
-        <div class="box">
-            <div class="box-head">
-                <h1>About Me</h1>
-                <div class="box-para">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, mollitia debitis beatae quisquam, voluptatem esse provident facere quam ad asperiores dolorem doloremque similique repellat at est ab itaque nesciunt reiciendis?</p>
+    <!-------start Skills--------->
+    
+    <section class="skill" id="skill">
+        <div class="heading">My Skills</div>
+
+        <div class="skills_container">
+
+            <div class="skill">
+                <div class="subject">HTML</div>
+                <div class="progress_bar">
+                     <div class="progress_line" value="85%" style="max-width: 85%"></div>
                 </div>
             </div>
+            <div class="skill">
+                <div class="subject">Python</div>
+                <div class="progress_bar">
+                     <div class="progress_line" value="94%" style="max-width: 94%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="subject">php</div>
+                <div class="progress_bar">
+                     <div class="progress_line" value="40%" style="max-width: 40%"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="subject">mysql</div>
+                <div class="progress_bar">
+                     <div class="progress_line" value="87%" style="max-width: 87%"></div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <div id="progress">
+        <span id="progress_value">&#x1F815;</span>
+        
+    </div>
 
 
+    <!-------start footer---------->
+    <div class="footer">
+        <p>Copyright © 2023 pranav. All right Reserved</p>
+    </div>
 
-
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js" integrity="sha512-rpLlll167T5LJHwp0waJCh3ZRf7pO6IT1+LZOhAyP6phAirwchClbTZV3iqL3BMrVxIYRbzGTpli4rfxsCK6Vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></body>
+    <!-----------------LINK TO JS------------------------>
+    <script src="/js/script.js"></script>
+</body>
 </html>
